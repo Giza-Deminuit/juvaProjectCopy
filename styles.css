@@ -1,0 +1,74 @@
+/* Ensure proper sizing */
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: Gainsboro;
+  }
+
+/* flex-container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the interface on the screen */ 
+    align-items: center;
+  }
+
+/* Main content */
+.main {
+    display: flex;
+    flex-basis: 70vh;
+    height: 97vh;
+    background-color: white; /* White background color */
+    border: 2px solid #2d2d2d; /* Black border */
+    border-radius: 25px;
+    flex-direction:column;
+    padding: 5px;
+    min-width:480px;
+    min-height: 680px;
+    background-image: url("./img/JUVA_Background_Faded.png");
+    background-repeat: no-repeat;
+    background-position: center; /* Center the image */
+    background-size: contain;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    row-gap: 100px;
+  }
+
+  .back {
+    margin-right: 90px;
+    margin-left: -20px;
+    background-color: transparent;
+    border:transparent;
+  }
+
+    img.backbutton {
+    height: 60px;
+    width: 105px;
+    flex-shrink: 3; /* default 1 */
+    opacity: 1;
+    transition: 0.3s;
+  }
+
+  img.backbutton:hover {opacity: 0.6}
+
+  img.homebutton {
+    height: 60px;
+    width: 60px;
+    flex-shrink: 3; /* default 1 */
+    opacity: 1;
+    transition: 0.3s;
+  }
+
+  img.homebutton:hover {opacity: 0.6}
+
+  .home {
+    margin-right: 200px;
+    background-color: transparent;
+    border:transparent;
+  }
