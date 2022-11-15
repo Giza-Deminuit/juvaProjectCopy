@@ -72,3 +72,15 @@ body {
     background-color: transparent;
     border:transparent;
   }
+
+  .scroll-content {
+    overflow-y: scroll;
+    height: 80vh;
+  }
+
+  .static-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    row-gap: 100px;
+  }
