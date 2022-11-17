@@ -1,8 +1,8 @@
 .drink-holder {
-  
-  display: table-row;
-  padding: 3.5rem;
-  align-content: flex-start;
+    overflow-y: auto;
+    align-content: center;
+    padding: 1.5rem;
+    padding-top: 0.5rem;
 }
 
 /* CSS */
@@ -19,13 +19,15 @@
   font-weight: 500;
   height: 10rem;
   width: 10rem;
-  padding: 0 1.6rem;
+  padding: 3rem;
   text-align: center;
   text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
   transition: all .5s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  margin: 2rem;
+  
 }
 
 .button-36 > img {
