@@ -84,3 +84,10 @@ body {
     justify-content:center;
     row-gap: 100px;
   }
+
+  .square {
+    height: 100px;
+    width: 100px;
+    background-color: #343088;
+    opacity: .8;
+  }
