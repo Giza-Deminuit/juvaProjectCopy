@@ -86,8 +86,11 @@ body {
   }
 
   .square {
-    height: 100px;
-    width: 100px;
+    position: relative;
+    height: 400px;
+    width: 500px;
+    left: 13%;
+    top: 13%;
     background-color: #343088;
-    opacity: .8;
+    opacity: 0.8;
   }
