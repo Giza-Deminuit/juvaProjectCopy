@@ -27,6 +27,8 @@ body {
     padding: 5px;
     min-width:480px;
     min-height: 680px;
+    max-width: 480px;
+    max-height: 680px;
     background-image: url("./img/JUVA_Background_Faded.png");
     background-repeat: no-repeat;
     background-position: center; /* Center the image */
