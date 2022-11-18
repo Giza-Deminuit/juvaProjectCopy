@@ -86,11 +86,12 @@ body {
   }
 
   .square {
+    border-radius: 15px;
     position: relative;
-    height: 400px;
-    width: 500px;
-    left: 13%;
-    top: 13%;
+    height: 460px;
+    width: 450px;
+    left: 12.5%;
     background-color: #343088;
     opacity: 0.8;
+    text-align: center;
   }
