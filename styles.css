@@ -95,3 +95,43 @@ body {
     opacity: 0.8;
     text-align: center;
   }
+
+  hr.text {
+    width: 75%;
+    height: 1.5px;
+    background-color: white;
+  }
+
+  .vertical-top {
+    border-left: 4px solid white;
+    height: 215px;
+    position:relative;
+    left: 5%;
+    top: -72%;
+}
+
+.vertical-bottom {
+  border-left: 4px solid white;
+  height: 215px;
+  position:relative;
+  left: 95%;
+  bottom: 74.5%;
+}
+
+hr.bottom {
+  width: 50%;
+  height: 4px;
+  background-color: white;
+  position: relative;
+  left: 21%;
+  top: -76.5%;
+}
+
+hr.top {
+  width: 50%;
+  height: 4px;
+  background-color: white;
+  position: relative;
+  left: -20%;
+  top: -170%;
+}
