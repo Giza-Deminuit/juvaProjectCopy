@@ -3,6 +3,8 @@
 <html lang="en">
     <script>
         var cost = localStorage['cost'];
+        var drink = localStorage['drink'];
+        var desc = localStorage['description'];
         localStorage.removeItem( 'cost' ); // Clear the localStorage
     </script>
 	<head>
@@ -26,9 +28,20 @@
         
                 <h1 id="total_cost">Total Cost: <span id="c"></span></h1>
                                     <script>
+                                        // Gets total cost from previous page
                                         let c = cost
                                         document.getElementById("c").innerHTML = cost;
-                                    </script>    
+                                    </script>
+                <p id="juice_drink"><span id="j"></span></p>    
+                                    <script>
+                                        let j = drink
+                                        document.getElementById("j").innerHTML = drink
+                                    </script>
+                <p id="juice_desc"><span id="d"></span></p>
+                <script>
+                    let d = desc
+                    document.getElementById("d").innerHTML = desc
+                </script>
                 </div>
                 <div>
                     placeholder
