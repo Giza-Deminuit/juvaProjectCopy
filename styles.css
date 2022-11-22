@@ -136,3 +136,43 @@ hr.top {
   left: -20%;
   top: -213%;
 }
+
+/* Pay with Menus */
+.rectangle {
+  border-radius: 25px;
+  height: 250px;
+  width: 475.9px;
+  background-color: #FB973B;
+  opacity: 0.8;
+  text-align: center;
+  position: relative;
+  left: -1.1%;
+  top: -12.1%;
+}
+
+.main2 {
+  display: flex;
+  flex-basis: 70vh;
+  height: 97vh;
+  background-color: #D9D9D9; /* White background color */
+  border: 2px solid #2d2d2d; /* Black border */
+  border-radius: 25px;
+  flex-direction:column;
+  padding: 5px;
+  min-width:480px;
+  min-height: 680px;
+  max-width: 480px;
+  max-height: 680px;
+  background-repeat: no-repeat;
+  background-position: center; /* Center the image */
+  background-size: contain;
+}
+
+.header2 {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  row-gap: 100px;
+  margin-bottom: 10px;
+  z-index: 1;
+}
