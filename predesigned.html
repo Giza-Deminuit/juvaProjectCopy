@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 
 <html lang="en">
+    <script>
+        var cost = 0.00
+        function getCost(total) {
+            cost = total
+            localStorage.setItem("cost", cost);
+        }
+        
+        
+    </script>
 	<head>
 		<meta charset="UTF-8">
 		<title>JUVA Juice</title>
@@ -21,7 +30,7 @@
                     </button>
                 </div>
                 <div class="drink-holder">
-                    <button class="button-36" role="button">
+                    <button onclick="getCost(3.50),window.location.href='payment_options.html' " class="button-36" role="button">
                         <h3>John Lemon</h3>
                         <img src="img/JohnLemon.png" alt="">
                     </button>
