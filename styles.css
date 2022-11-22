@@ -27,6 +27,8 @@ body {
     padding: 5px;
     min-width:480px;
     min-height: 680px;
+    max-width: 480px;
+    max-height: 680px;
     background-image: url("./img/JUVA_Background_Faded.png");
     background-repeat: no-repeat;
     background-position: center; /* Center the image */
@@ -38,11 +40,11 @@ body {
     flex-direction: row;
     justify-content:center;
     row-gap: 100px;
+    margin-bottom: 10px;
   }
 
   .back {
-    margin-right: 90px;
-    margin-left: -20px;
+    margin-right: 77px;
     background-color: transparent;
     border:transparent;
   }
@@ -85,12 +87,52 @@ body {
     row-gap: 100px;
   }
 
+  /* Custom Menu CSS */
   .square {
-    position: relative;
-    height: 400px;
-    width: 500px;
-    left: 13%;
-    top: 13%;
+    border-radius: 15px;
+    height: 350px;
+    width: 400px;
     background-color: #343088;
     opacity: 0.8;
+    text-align: center;
   }
+
+  hr.text {
+    width: 75%;
+    height: 2.5px;
+    background-color: white;
+  }
+
+  .vertical-top {
+    border-left: 4px solid white;
+    height: 215px;
+    position:relative;
+    left: 5%;
+    top: -84%;
+}
+
+.vertical-bottom {
+  border-left: 4px solid white;
+  height: 215px;
+  position:relative;
+  left: 95%;
+  bottom: 115%;
+}
+
+hr.bottom {
+  width: 50%;
+  height: 4px;
+  background-color: white;
+  position: relative;
+  left: 21%;
+  top: -118%;
+}
+
+hr.top {
+  width: 50%;
+  height: 4px;
+  background-color: white;
+  position: relative;
+  left: -20%;
+  top: -213%;
+}
