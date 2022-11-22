@@ -6,6 +6,13 @@
     padding-top: 0.5rem;
 }
 
+.drink-holder-2 {
+    overflow-y: auto;
+    align-content: center;
+    padding: 1rem;
+    padding-top: 0.25rem;
+}
+
 /* CSS */
 .button-36 {
   background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
@@ -53,16 +60,142 @@
   }
 }
 
+.button-spec-red {
+  background-image: linear-gradient(92.88deg, #E24545 9.16%, #e24747 43.89%, #e24b4b 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 4rem;
+  width: 6.5rem;
+  padding: 0rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 1rem;
+}
 
-.card {
-  align-items: center;
-  background-color: #455EB5;
-  border-radius: 18%;
-  border-end-start-radius: 0%;
-  border-end-end-radius: 0%;
-  height: 100%;
-  margin-left: -5%;
-  margin-bottom: -5%;
-  margin-right: -5%;
-  overflow-x: hidden;
+.button-spec-red:hover {
+  box-shadow: rgba(226, 69, 69, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+.button-spec-orange {
+  background-image: linear-gradient(92.88deg, #e2a345 9.16%, #e2a447 43.89%, #e2a64b 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 4rem;
+  width: 6.5rem;
+  padding: 0rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 1rem;
+}
+
+.button-spec-orange:hover {
+  box-shadow: rgba(226, 163, 69, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+.button-spec-green {
+  background-image: linear-gradient(92.88deg, #A8C13F 9.16%, #a6c040 43.89%, #a9c246 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 4rem;
+  width: 6.5rem;
+  padding: 0rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 1rem;
+}
+
+.button-spec-green:hover {
+  box-shadow: rgba(168, 193, 63, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+.button-spec-blue {
+  background-image: linear-gradient(92.88deg, #8F6FD7 9.16%, #8f72d4 43.89%, #9479d4 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 4rem;
+  width: 6.5rem;
+  padding: 0rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 1rem;
+}
+
+.button-spec-blue:hover {
+  box-shadow: rgba(143, 111, 215, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+.button-spec-pink {
+  background-image: linear-gradient(92.88deg, #EA6AAA 9.16%, #eb6eac 43.89%, #eb76b1 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 4rem;
+  width: 6.5rem;
+  padding: 0rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 1rem;
+}
+
+.button-spec-pink:hover {
+  box-shadow: rgba(234, 106, 170, 0.5) 0 1px 30px;
+  transition-duration: .1s;
 }
