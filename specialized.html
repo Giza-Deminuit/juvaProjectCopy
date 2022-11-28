@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 
 <html lang="en">
+    <script>
+        //Initalize variables
+        var cost = 0.00
+        var drink = ""
+        var description = ""
+
+        // Used to get cost of juice
+        function getCost(total) { 
+            cost = total
+            localStorage.setItem("cost", cost);
+        }
+
+        // Used to get the name of the juice
+        function getJuice(juice) {
+            drink = juice
+            localStorage.setItem("drink", drink)
+        }
+
+        // Used to get the description of the juice
+        function getDesc(desc) {
+            description = desc
+            localStorage.setItem("description", description)
+        }
+    </script>
+
 	<head>
 		<meta charset="UTF-8">
 		<title>JUVA Juice</title>
@@ -22,76 +47,76 @@
                 </div>
                 <div class="scroll-content">
                     <div class="drink-holder-2">
-                        <button class="button-spec-red" role="button">
-                            Allergy
+                        <button class="button-spec-red" role="button" onclick="getCost(5.99), getJuice('Allergy'), getDesc('Relieve your allergy symptoms'), window.location.href='payment_options.html' ">
+                            <h4>Allergy</h4>
                         </button>
-                        <button class="button-spec-orange" role="button">
+                        <button class="button-spec-orange" role="button" onclick="getCost(5.99), getJuice('Arthritis'), getDesc('Soothe your joints'), window.location.href='payment_options.html' ">
                             Arthritis
                         </button>
-                        <button class="button-spec-green" role="button">
+                        <button class="button-spec-green" role="button" onclick="getCost(5.99), getJuice('Asthma'), getDesc('Breathe easily'), window.location.href='payment_options.html' ">
                             Asthma
                         </button>
-                        <button class="button-spec-red" role="button" style="font-size:10px;font-weight:350">
+                        <button class="button-spec-red" role="button" style="font-size:10px;font-weight:350" onclick="getCost(5.99), getJuice('Athletic Performance'), getDesc('Achieve your fitness goals'), window.location.href='payment_options.html' ">
                             Athletic Performance
                         </button>
-                        <button class="button-spec-blue" role="button" style="font-size:12px">
+                        <button class="button-spec-blue" role="button" style="font-size:12px" onclick="getCost(5.99), getJuice('Blood Pressure'), getDesc('Lower your blood pressure'), window.location.href='payment_options.html' ">
                             Blood Pressure
                         </button>
-                        <button class="button-spec-pink" role="button">
+                        <button class="button-spec-pink" role="button" onclick="getCost(5.99), getJuice('Bronchitis'), getDesc('Keep from coughing'), window.location.href='payment_options.html' ">
                             Bronchitis
                         </button>
-                        <button class="button-spec-orange" role="button">
+                        <button class="button-spec-orange" role="button" onclick="getCost(5.99), getJuice('Cold'), getDesc('Recover quickly'), window.location.href='payment_options.html' ">
                             Cold
                         </button>
-                        <button class="button-spec-blue" role="button">
+                        <button class="button-spec-blue" role="button" onclick="getCost(5.99), getJuice('Cramps'), getDesc('Ease the pain'), window.location.href='payment_options.html' ">
                             Cramps
                         </button>
-                        <button class="button-spec-red" role="button">
+                        <button class="button-spec-red" role="button" onclick="getCost(5.99), getJuice('Diabetes'), getDesc('Regulate your sugar levels'), window.location.href='payment_options.html' ">
                             Diabetes
                         </button>
-                        <button class="button-spec-green" role="button">
+                        <button class="button-spec-green" role="button" onclick="getCost(5.99), getJuice('Fatigue'), getDesc('Energize for the day'), window.location.href='payment_options.html' ">
                             Fatigue
                         </button>
-                        <button class="button-spec-pink" role="button">
+                        <button class="button-spec-pink" role="button" onclick="getCost(5.99), getJuice('Fever'), getDesc('Reduce your body temperature'), window.location.href='payment_options.html' ">
                             Fever
                         </button>
-                        <button class="button-spec-orange" role="button">
+                        <button class="button-spec-orange" role="button" onclick="getCost(5.99), getJuice('Flu'), getDesc('Feel better'), window.location.href='payment_options.html' ">
                             Flu
                         </button>
-                        <button class="button-spec-blue" role="button">
+                        <button class="button-spec-blue" role="button" onclick="getCost(5.99), getJuice('Hangover'), getDesc('Recover from a long night'), window.location.href='payment_options.html' ">
                             Hangover
                         </button>
-                        <button class="button-spec-red" role="button">
+                        <button class="button-spec-red" role="button" onclick="getCost(5.99), getJuice('Headache'), getDesc('Relieve the pressure'), window.location.href='payment_options.html' ">
                             Headache
                         </button>
-                        <button class="button-spec-green" role="button">
+                        <button class="button-spec-green" role="button" onclick="getCost(5.99), getJuice('Heartburn'), getDesc('Reduce your acid reflux'), window.location.href='payment_options.html' ">
                             Heartburn
                         </button>
-                        <button class="button-spec-pink" role="button">
+                        <button class="button-spec-pink" role="button" onclick="getCost(5.99), getJuice('Insomnia'), getDesc('Sleep soundly'), window.location.href='payment_options.html' ">
                             Insomnia
                         </button>
-                        <button class="button-spec-orange" role="button">
+                        <button class="button-spec-orange" role="button" onclick="getCost(5.99), getJuice('Migraine'), getDesc('Dull the throbbing'), window.location.href='payment_options.html' ">
                             Migraine
                         </button>
-                        <button class="button-spec-blue" role="button">
+                        <button class="button-spec-blue" role="button" onclick="getCost(5.99), getJuice('Nervousness'), getDesc('Relax your anxieties'), window.location.href='payment_options.html' ">
                             Nervousness
                         </button>
-                        <button class="button-spec-red" role="button">
+                        <button class="button-spec-red" role="button" onclick="getCost(5.99), getJuice('Pneumonia'), getDesc('Breathe deeply'), window.location.href='payment_options.html' ">
                             Pneumonia
                         </button>
-                        <button class="button-spec-pink" role="button">
+                        <button class="button-spec-pink" role="button" onclick="getCost(5.99), getJuice('Rhinitis'), getDesc('Clear your sinuses'), window.location.href='payment_options.html' ">
                             Rhinitis
                         </button>
-                        <button class="button-spec-blue" role="button">
+                        <button class="button-spec-blue" role="button" onclick="getCost(5.99), getJuice('Sciatica'), getDesc('Reduce your back pain'), window.location.href='payment_options.html' ">
                             Sciatica
                         </button>
-                        <button class="button-spec-green" role="button" style="font-size:12px">
+                        <button class="button-spec-green" role="button" style="font-size:12px" onclick="getCost(5.99), getJuice('Sinus Trouble'), getDesc('Relieve your sinuses'), window.location.href='payment_options.html' ">
                             Sinus Trouble
                         </button>
-                        <button class="button-spec-pink" role="button">
+                        <button class="button-spec-pink" role="button" onclick="getCost(5.99), getJuice('Sleeplessness'), getDesc('Rest meaningfully'), window.location.href='payment_options.html' ">
                             Sleeplessness
                         </button>
-                        <button class="button-spec-orange" role="button">
+                        <button class="button-spec-orange" role="button" onclick="getCost(5.99), getJuice('Ulcers'), getDesc('Deacidify your gut'), window.location.href='payment_options.html' ">
                             Ulcers
                         </button>
                     </div>
