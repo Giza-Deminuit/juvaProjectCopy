@@ -19,13 +19,12 @@ body {
 .main {
     display: flex;
     flex-basis: 70vh;
-    height: 97vh;
     background-color: white; /* White background color */
     border: 2px solid #2d2d2d; /* Black border */
     border-radius: 25px;
     flex-direction:column;
     padding: 5px;
-    min-width:480px;
+    min-width: 480px;
     min-height: 680px;
     max-width: 480px;
     max-height: 680px;
@@ -177,6 +176,7 @@ hr.top {
   z-index: 1;
 }
 
+<<<<<<< HEAD
 .backbutton {
   border: none;
   color: white;
@@ -203,3 +203,5 @@ hr.top {
   color: white;
 }
 
+=======
+>>>>>>> f7d9081114c706375e7439b68c5349ceb1230d31
