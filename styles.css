@@ -189,6 +189,7 @@ hr.top {
   position: relative;
   bottom: -24%;
   left: 7%;
+  border-radius: 25px;
 }
 .buttonback {
   background-color: #FB973B; 
@@ -215,6 +216,7 @@ hr.top {
   cursor: pointer;
   position: relative;
   top: 60%;
+  border-radius: 25px;
 }
 .buttonpay {
   background-color: #FB973B; 
