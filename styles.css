@@ -187,8 +187,8 @@ hr.top {
   transition-duration: 0.4s;
   cursor: pointer;
   position: relative;
-  bottom: -20%;
-  left: 7.5%;
+  bottom: -24%;
+  left: 7%;
 }
 .buttonback {
   background-color: #FB973B; 
@@ -197,6 +197,32 @@ hr.top {
   width: 85%;
 }
 .buttonback:hover {
+  background-color: #FB973B;
+  color: white;
+}
+
+/* Payment Options Buttons */
+.paybutton {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  position: relative;
+  top: 60%;
+}
+.buttonpay {
+  background-color: #FB973B; 
+  color: black; 
+  border: 2px solid black;
+  width: 83%;
+}
+.buttonpay:hover {
   background-color: #FB973B;
   color: white;
 }
