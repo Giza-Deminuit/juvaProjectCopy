@@ -196,6 +196,8 @@ hr.top {
   color: black; 
   border: 2px solid black;
   width: 85%;
+  padding: 16px 32px;
+  margin: 4px 2px;
 }
 .buttonback:hover {
   background-color: #FB973B;
