@@ -14,3 +14,7 @@ for (let i = 0; i < openNodeList.length; i++) {
 close.addEventListener('click', () => {
     modal_container.classList.remove('show');
 });
+
+function closeModal() {
+    document.getElementById('modal_container').classList.remove('show');
+}
