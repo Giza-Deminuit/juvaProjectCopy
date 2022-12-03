@@ -2,10 +2,10 @@
 
 .drink-holder {
     overflow-y: auto;
-    align-content: center;
     display: block;
-    padding: 0.1rem;
     padding-top: 0.5rem;
+    text-align: center;
+    flex-wrap: nowrap;
 }
 
 .drink-holder-2 {
@@ -33,7 +33,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin: 2rem;
+  margin: 1em;
 }
 
 .button-36 img {
@@ -87,11 +87,11 @@
   background-image: linear-gradient(290.88deg, #6d13bb 9.16%, #4c27e0 64.72%);
 }
 
-@media (min-width: 768px) {
+/* Commented out by maggie to fix button positioning in predesigned menu
+/*@media (min-width: 768px) {
   .button-36 {
     padding: 0 2.6rem;
-  }
-}
+  }*/ 
 
 .button-spec-red {
   background-image: linear-gradient(92.88deg, #E24545 9.16%, #e24747 43.89%, #e24b4b 64.72%);
