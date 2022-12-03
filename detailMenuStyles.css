@@ -38,3 +38,24 @@
 .modal h1 {
     margin: 0;
 }
+
+.modal > img {
+    float: left;
+    height: 100%;
+    right:0%;
+    margin-right: 0%;
+    padding-right: 0%;
+}
+
+#info {
+    float: right;
+}
+
+#close {
+    background-color: transparent;
+    border: none;
+}
+#close img {
+    width: 2.5rem;
+    margin-top: 40%;
+}
