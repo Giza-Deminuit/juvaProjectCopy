@@ -25,7 +25,7 @@
 }
 
 .modal {
-    background-color: #fff;
+    background-color: #e02ce3;
     border-radius: 5px;
     padding: 30px 50px;
     width: 100%;
@@ -33,6 +33,7 @@
     height: 300px;
     text-align: center;
     border-radius: 18px;
+    color: white;
 }
 
 .modal h1 {

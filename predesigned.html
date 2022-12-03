@@ -6,6 +6,7 @@
         var cost = 0.00
         var drink = ""
         var description = ""
+        var color = ""
 
         // Used to get cost of juice
         function setCost(total) { 
@@ -23,6 +24,12 @@
         function setDesc(desc) {
             description = desc
             localStorage.setItem("description", description)
+            
+        }
+
+        function setColor(colors) {
+            color = colors
+            localStorage.setItem("color", color)
             getStuff()
         }
         
@@ -31,6 +38,7 @@
             document.getElementById("juiceDesc").innerHTML = localStorage.getItem("description")
             document.getElementById("juicePrice").innerHTML = "$" + localStorage.getItem("cost")
             document.getElementById("bottleImage").src = "img/B" + localStorage.getItem("drink") + ".png"
+            document.getElementById("modal").className = "modal " + localStorage.getItem("color")
         }
     </script>
 
@@ -55,32 +63,32 @@
                     </button>
                 </div>
                 <div class="drink-holder">
-                    <button onclick="setCost(3.50), setJuice('John Lemon'), setDesc('Lemony fresh!') " class="button-36 open bluishButton" id="open" role="button">
+                    <button onclick="setCost(3.50), setJuice('John Lemon'), setDesc('Lemony fresh!'), setColor('bluishButton') " class="button-36 open bluishButton" id="open" role="button">
                         <h3>John Lemon</h3>
                         <img src="img/JohnLemon.png" alt="">
                         <p>Strawberries, Lemons, Apples</p>
                     </button>
-                    <button onclick="setCost(4.50), setJuice('Underground'), setDesc('All the minerals!') "class="button-36 open purpleButton" id="open" role="button">
+                    <button onclick="setCost(4.50), setJuice('Underground'), setDesc('All the minerals!'), setColor('purpleButton') "class="button-36 open purpleButton" id="open" role="button">
                         <h3>Underground</h3>
                         <img src="img/Underground.png" alt="">
                         <p>Beet, Carrot, Apple, Ginger, Lemon</p>
                     </button>
-                    <button onclick="setCost(3.52), setJuice('Red Zeppelin'), setDesc('You know he would love it') " class="button-36 open redButton" id="open" role="button">
+                    <button onclick="setCost(3.52), setJuice('Red Zeppelin'), setDesc('You know he would love it'), setColor('redButton') " class="button-36 open redButton" id="open" role="button">
                         <h3>Red Zeppelin</h3>
                         <img src="img/RedZeppelin.png" alt="">
                         <p>Bell Pepper, Carrot, Orange, Lemon</p>
                     </button>
-                    <button onclick="setCost(6.50), setJuice('Citrus Psych'), setDesc('Get psyched for this!') "class="button-36 open orangeButton" id="open" role="button">
+                    <button onclick="setCost(6.50), setJuice('Citrus Psych'), setDesc('Get psyched for this!'), setColor('orangeButton') "class="button-36 open orangeButton" id="open" role="button">
                         <h3>Citrus Psych</h3>
                         <img src="img/Citrus-Psych.png" alt="">
                         <p> Orange, Carrots, Lemon, Apples, Kale</p>
                     </button>
-                    <button onclick="setCost(2.24), setJuice('Reboot'), setDesc('Get that energy back!') "class="button-36 open greenButton" id="open" role="button">
+                    <button onclick="setCost(2.24), setJuice('Reboot'), setDesc('Get that energy back!'), setColor('greenButton') "class="button-36 open greenButton" id="open" role="button">
                         <h3>Reboot</h3>
                         <img src="img/reboot.png" alt="">
                         <p>Kale, Cucumber, Apple, Celery, Ginger, Lemon</p>
                     </button>
-                    <button onclick="setCost(4.51), setJuice('Prescription'), setDesc('Makes you feel so much better!') "class="button-36 open yellowButton" id="open" role="button">
+                    <button onclick="setCost(4.51), setJuice('Prescription'), setDesc('Makes you feel so much better!'), setColor('yellowButton') "class="button-36 open yellowButton" id="open" role="button">
                         <h3>Prescription</h3>
                         <img src="img/Prescription.png" alt="">
                         <p>Apple, Lemon, Ginger, Cayenne, Echinacea, Agave</p>
@@ -89,7 +97,7 @@
                 </div>
 
                 <div class="modal-container" id="modal_container">
-                    <div class="modal">
+                    <div class="modal" id="modal">
                         <img id="bottleImage" src="">
                         <div id="info">
                             <h1 id="juiceHeader"></h1>
