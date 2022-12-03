@@ -63,6 +63,30 @@
   font-size: 12px;
 }
 
+.redButton {
+  background-image: linear-gradient(152.88deg, #dc3c2a 9.16%, #bd2318 64.72%);
+}
+
+.greenButton {
+  background-image: linear-gradient(92.88deg, #A8C13F 9.16%, #a6c040 43.89%, #a9c246 64.72%);
+}
+
+.yellowButton {
+  background-image: linear-gradient(182.88deg, #b1d424 9.16%, #d0d319 64.72%);
+}
+
+.orangeButton {
+  background-image: linear-gradient(12.88deg, #e84716 9.16%, #f25201 64.72%);
+}
+
+.purpleButton {
+  background-image: linear-gradient(12.88deg, #7705b4 9.16%, #cb1dce 64.72%);
+}
+
+.bluishButton {
+  background-image: linear-gradient(12.88deg, #6d13bb 9.16%, #4c27e0 64.72%);
+}
+
 @media (min-width: 768px) {
   .button-36 {
     padding: 0 2.6rem;
