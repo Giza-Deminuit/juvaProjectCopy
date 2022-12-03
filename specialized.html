@@ -23,6 +23,13 @@
         function getDesc(desc) {
             description = desc
             localStorage.setItem("description", description)
+            getStuff()
+        }
+
+        function getStuff() {
+            document.getElementById("juiceHeader").innerHTML = localStorage.getItem("drink")
+            document.getElementById("juiceDesc").innerHTML = localStorage.getItem("description")
+            document.getElementById("juicePrice").innerHTML = "$" + localStorage.getItem("cost")
         }
     </script>
 
@@ -125,10 +132,9 @@
 
                 <div class="modal-container" id="modal_container">
                     <div class="modal">
-                        <h1>Modal</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, perferendis provident delectus expedita odit ex reprehenderit magnam porro incidunt ut, praesentium similique, eos repellendus voluptates amet ad accusamus doloremque nihil?
-                        </p>
+                        <h1 id="juiceHeader"></h1>
+                        <p id="juiceDesc"></p>
+                        <p id="juicePrice">$</p>
                         <button id="close">
                             Close
                         </button>
