@@ -38,6 +38,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content:center;
+    align-items: center;
     row-gap: 100px;
     margin-bottom: 10px;
   }
@@ -51,7 +52,7 @@ body {
     img.backbutton {
     height: 60px;
     width: 105px;
-    flex-shrink: 3; /* default 1 */
+
     opacity: 1;
     transition: 0.3s;
   }
@@ -62,7 +63,6 @@ body {
     height: 60px;
     width: 60px;
     flex-shrink: 3; /* default 1 */
-    opacity: 1;
     transition: 0.3s;
   }
 
@@ -178,12 +178,12 @@ hr.top {
 .backbutton {
   border: none;
   color: white;
-  padding: 16px 32px;
+  padding: 0px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 24px;
-  margin: 4px 2px;
+  margin: 2px;
   transition-duration: 0.4s;
   cursor: pointer;
   position: relative;
