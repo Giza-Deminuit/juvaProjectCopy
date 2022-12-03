@@ -23,7 +23,6 @@ body {
     border: 2px solid #2d2d2d; /* Black border */
     border-radius: 25px;
     flex-direction:column;
-    padding: 5px;
     min-width: 480px;
     min-height: 680px;
     max-width: 480px;
@@ -41,6 +40,7 @@ body {
     align-items: center;
     row-gap: 100px;
     margin-bottom: 10px;
+    margin-top: 5px;
     z-index: 1;
   }
 
@@ -148,8 +148,7 @@ hr.top {
   opacity: 0.8;
   text-align: center;
   position: relative;
-  left: -1%;
-  top: -12.5%;
+  top:-89px;
 }
 
 .main2 {
@@ -168,6 +167,8 @@ hr.top {
   background-repeat: no-repeat;
   background-position: center; /* Center the image */
   background-size: contain;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .backbutton {
@@ -185,18 +186,6 @@ hr.top {
   bottom: -24%;
   left: 7%;
   border-radius: 25px;
-}
-.buttonback {
-  background-color: #FB973B; 
-  color: black; 
-  border: 2px solid black;
-  width: 85%;
-  padding: 16px 32px;
-  margin: 4px 2px;
-}
-.buttonback:hover {
-  background-color: #FB973B;
-  color: white;
 }
 
 /* Payment Options Buttons */
