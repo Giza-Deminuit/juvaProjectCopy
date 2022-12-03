@@ -41,6 +41,7 @@ body {
     align-items: center;
     row-gap: 100px;
     margin-bottom: 10px;
+    z-index: 1;
   }
 
   .back {
@@ -139,14 +140,16 @@ hr.top {
 /* Pay with Menus */
 .rectangle {
   border-radius: 25px;
-  height: 250px;
-  width: 475.9px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  height: 240px;
+  width: 477px;
   background-color: #FB973B;
   opacity: 0.8;
   text-align: center;
   position: relative;
-  left: -1.1%;
-  top: -13.3%;
+  left: -1%;
+  top: -12.5%;
 }
 
 .main2 {
@@ -167,14 +170,6 @@ hr.top {
   background-size: contain;
 }
 
-.header2 {
-  display: flex;
-  flex-direction: row;
-  justify-content:center;
-  row-gap: 100px;
-  margin-bottom: 10px;
-  z-index: 1;
-}
 .backbutton {
   border: none;
   color: white;
