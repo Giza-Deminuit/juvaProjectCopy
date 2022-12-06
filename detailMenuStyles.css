@@ -75,9 +75,25 @@
     background-color: white;
     border-radius:18px;
     border: none;
-    width: 70%;
+    width: 60%;
     margin-top: 10%;
+    float: left;
 }
+
+#red-x {
+    height:48%;
+    background-color: #cc3232;
+    border-radius:18px;
+    border: none;
+    margin-top: 10%;
+    float: right;
+}
+
+#red-x img {
+    height: 60px;
+    border: none;
+}
+
 a {
     text-decoration: none;
 }
