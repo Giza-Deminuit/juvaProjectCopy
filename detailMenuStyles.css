@@ -17,7 +17,7 @@
     max-height: 678px;
     opacity: 0;
     pointer-events: none; /* lets us click things while pop-up is hidden*/
-    transition: opacity 0.3s ease;
+    transition: opacity 0.35s ease;
     z-index: 2;
 }
 
@@ -69,4 +69,15 @@
 #close img {
     width: 2.5rem;
     margin-top: 40%;
+}
+
+#confirm {
+    background-color: white;
+    border-radius:18px;
+    border: none;
+    width: 70%;
+    margin-top: 10%;
+}
+a {
+    text-decoration: none;
 }
