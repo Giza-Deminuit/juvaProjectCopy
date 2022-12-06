@@ -231,8 +231,8 @@ hr.top {
   height: 350px; 
   width: 400px; 
   background-color: #FB973B; 
-  position: fixed; 
-  top: 15%; 
-  right: 26.5%; 
+  position: relative; 
+  top: 50px;
+  right: -8%; 
   text-align: center; 
 }
