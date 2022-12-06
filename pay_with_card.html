@@ -25,32 +25,28 @@
                     </button>
                 </div>
                 <div class="rectangle">
-                    <p style="margin-top: 75px;">
+                    <strong style="position: relative; top:50px">
                         <FONT COLOR="000000">
-                            <FONT size="6.5" face="arial">
-                                <h1 id="total_cost">Total:<br> <span id="c"></span></h1>
+                            <FONT size="4" face="arial">
+                                 <h1 id="total_cost">Total: <br><span id="c"></span></h1>
                                 <script>
                                     // Gets total cost from previous page
                                     let c = cost
                                     document.getElementById("c").innerHTML = cost;
-                                </script>                               
+                                </script>                                                           
                             </FONT>
                         </FONT>
-                        <p id="juice_drink"><span id="j"></span></p>    
+                        <FONT COLOR="000000">
+                            <FONT size="6.5" face="arial">
+                                <p id="juice_drink">You selected: <span id="j"></span></p>   
                                 <script>
                                     // Gets the drink name from previous page
                                     let j = drink
                                     document.getElementById("j").innerHTML = drink
-                                </script>
-                        <p id="juice_desc"><span id="d"></span></p>
-                                <script>
-                                    // Gets the drink description from previous page
-                                    let d = desc
-                                    document.getElementById("d").innerHTML = desc
-                                </script>
-                        </p>
-                    </p>
-                </p>
+                                </script>                                                           
+                            </FONT>
+                        </FONT>    
+                    </strong>
                 </div>
                 <p style="margin-top: 0px;text-align: center;">
                     <FONT color="000000" size="6.5" face="arial">
