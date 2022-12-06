@@ -31,6 +31,19 @@
             document.getElementById("juiceDesc").innerHTML = localStorage.getItem("description")
             document.getElementById("juicePrice").innerHTML = "$" + localStorage.getItem("cost")
         }
+
+        function pushLocalStorage() {
+            let juiceInfo = {}
+            juiceInfo.drink = drink
+            juiceInfo.desc = localStorage.getItem("description")
+            juiceInfo.cost = localStorage.getItem("cost")
+            juiceInfo.color = localStorage.getItem("color")
+
+            let juiceArray=localStorage.getItem('pushedJuice') || []
+            juiceArray.push(juiceInfo)
+            localStorage.setItem('juiceArray',juiceArray)
+        }
+
     </script>
 
 	<head>
@@ -137,7 +150,11 @@
                         <p id="juiceDesc"></p>
                         <p id="juicePrice">$</p>
                         <button id="confirm">
-                            <h2>CONFIRM</h2>
+                            <h2 onclick="pushLocalStorage()">
+                                <a href="payment_options.html">
+                                    CONFIRM
+                                </a>
+                            </h2>
                         </button>
                     </div>
                 </div>
