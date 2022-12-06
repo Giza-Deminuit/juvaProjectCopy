@@ -215,3 +215,14 @@ hr.top {
   color: white;
 }
 
+/* Thank You Screen Styles */
+.bottomrectangle {
+  border-radius: 25px;
+  height: 100px;
+  width: 477px;
+  background-color: #FB973B;
+  opacity: 0.8;
+  text-align: center;
+  position: relative;
+  bottom:-492px;
+}
