@@ -6,6 +6,8 @@
         var drink = localStorage['drink'];
         var desc = localStorage['description'];
         localStorage.removeItem( 'cost' ); // Clear the localStorage
+        localStorage.removeItem('drink');
+        localStorage.removeItem('description');
     </script>
 	<head>
 		<meta charset="UTF-8">
@@ -34,14 +36,16 @@
                                     </script>
                 <p id="juice_drink"><span id="j"></span></p>    
                                     <script>
+                                        // Gets the drink name from previous page
                                         let j = drink
                                         document.getElementById("j").innerHTML = drink
                                     </script>
                 <p id="juice_desc"><span id="d"></span></p>
-                <script>
-                    let d = desc
-                    document.getElementById("d").innerHTML = desc
-                </script>
+                                    <script>
+                                        // Gets the drink description from previous page
+                                        let d = desc
+                                        document.getElementById("d").innerHTML = desc
+                                    </script>
                 </div>
                 <div>
                     placeholder
