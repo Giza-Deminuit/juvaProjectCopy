@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 
 <html lang="en">
+    <script>
+        var cost = localStorage['cost'];
+        var drink = localStorage['drink'];
+        var desc = localStorage['description'];
+        localStorage.removeItem( 'cost' ); // Clear the localStorage
+        localStorage.removeItem('drink');
+        localStorage.removeItem('description');
+    </script>
 	<head>
 		<meta charset="UTF-8">
 		<title>JUVA Juice</title>
@@ -23,7 +31,12 @@
                     <p style="margin-top: 75px;">
                         <FONT COLOR="000000">
                             <FONT size="6.5" face="arial">
-                                Total:<br><br>$9.81                                
+                                Total:<br><p id="total_cost"><span id="c"></span></p>
+                                <script>
+                                    // Gets total cost from previous page
+                                    let c = cost
+                                    document.getElementById("c").innerHTML = cost;
+                                </script><br>                                
                             </FONT>
                         </FONT>
                     </p>
