@@ -12,6 +12,7 @@
         var drink = ""
         var description = ""
         var color = ""
+        var ingredients = ""
 
         // Used to get cost of juice
         function setCost(total) { 
@@ -31,6 +32,12 @@
             localStorage.setItem("description", description)
         }
 
+        // Used to get the ingredients of the juice
+        function setIngredients(ingre) {
+            ingredients = ingre
+            localStorage.setItem("ingredients", ingredients)
+        }
+
         function setColor(colors) {
             color = colors
             localStorage.setItem("color", color)
@@ -41,6 +48,7 @@
             document.getElementById("juiceHeader").innerHTML = localStorage.getItem("drink")
             document.getElementById("juiceDesc").innerHTML = localStorage.getItem("description")
             document.getElementById("juicePrice").innerHTML = "$" + localStorage.getItem("cost")
+            document.getElementById("juiceIngredients").innerHTML = localStorage.getItem("ingredients")
             document.getElementById("bottleImage").src = "img/B" + localStorage.getItem("drink") + ".png"
             document.getElementById("modal").className = "modal " + localStorage.getItem("color")
         }
@@ -79,32 +87,32 @@
                     </button>
                 </div>
                 <div class="drink-holder">
-                    <button onclick="setCost(3.50), setJuice('John Lemon'), setDesc('Lemony fresh!'), setColor('bluishButton') " class="button-36 open bluishButton" id="open" role="button">
+                    <button onclick="setCost(3.50), setJuice('John Lemon'), setIngredients('<ul><h3>Ingredients:</h3><li>Strawberry</li><li>Lemon</li><li>Green Apple</li></ul>'), setDesc('Lemony fresh!'), setColor('bluishButton') " class="button-36 open bluishButton" id="open" role="button">
                         <h3>John Lemon</h3>
                         <img src="img/JohnLemon.png" alt="">
                         <p>Strawberries, Lemons, Apples</p>
                     </button>
-                    <button onclick="setCost(4.50), setJuice('Underground'), setDesc('All the minerals!'), setColor('purpleButton') "class="button-36 open purpleButton" id="open" role="button">
+                    <button onclick="setCost(4.50), setJuice('Underground'), setIngredients('<ul><h3>Ingredients:</h3><li>Beet</li><li>Carrot</li><li>Green Apple</li><li>Ginger</li><li>Lemon</li></ul>'), setDesc('All the minerals!'), setColor('purpleButton') "class="button-36 open purpleButton" id="open" role="button">
                         <h3>Underground</h3>
                         <img src="img/Underground.png" alt="">
                         <p>Beet, Carrot, Apple, Ginger, Lemon</p>
                     </button>
-                    <button onclick="setCost(3.52), setJuice('Red Zeppelin'), setDesc('You know he would love it'), setColor('redButton') " class="button-36 open redButton" id="open" role="button">
+                    <button onclick="setCost(3.52), setJuice('Red Zeppelin'), setIngredients('<ul><h3>Ingredients:</h3><li>Red Bell<br>&nbsp;&nbsp;&nbsp;&nbsp;Pepper</li><li>Carrot</li><li>Orange</li><li>Lemon</li></ul>'), setDesc('You know he would love it'), setColor('redButton') " class="button-36 open redButton" id="open" role="button">
                         <h3>Red Zeppelin</h3>
                         <img src="img/RedZeppelin.png" alt="">
                         <p>Bell Pepper, Carrot, Orange, Lemon</p>
                     </button>
-                    <button onclick="setCost(6.50), setJuice('Citrus Psych'), setDesc('Get psyched for this!'), setColor('orangeButton') "class="button-36 open orangeButton" id="open" role="button">
+                    <button onclick="setCost(6.50), setJuice('Citrus Psych'), setIngredients('<ul><h3>Ingredients:</h3><li>Orange</li><li>Carrot</li><li>Lemon</li><li>Green Apple</li><li>Kale</li></ul>'), setDesc('Get psyched for this!'), setColor('orangeButton') "class="button-36 open orangeButton" id="open" role="button">
                         <h3>Citrus Psych</h3>
                         <img src="img/Citrus-Psych.png" alt="">
                         <p> Orange, Carrots, Lemon, Apples, Kale</p>
                     </button>
-                    <button onclick="setCost(2.24), setJuice('Reboot'), setDesc('Get that energy back!'), setColor('greenButton') "class="button-36 open greenButton" id="open" role="button">
+                    <button onclick="setCost(2.24), setJuice('Reboot'), setIngredients('<ul><h3>Ingredients:</h3><li>Kale</li><li>Cucumber</li><li>Green Apple</li><li>Celery</li><li>Ginger</li><li>Lemon</li></ul>'), setDesc('Get that energy back!'), setColor('greenButton') "class="button-36 open greenButton" id="open" role="button">
                         <h3>Reboot</h3>
                         <img src="img/reboot.png" alt="">
                         <p>Kale, Cucumber, Apple, Celery, Ginger, Lemon</p>
                     </button>
-                    <button onclick="setCost(4.51), setJuice('Prescription'), setDesc('Makes you feel so much better!'), setColor('yellowButton') "class="button-36 open yellowButton" id="open" role="button">
+                    <button onclick="setCost(4.51), setJuice('Prescription'), setIngredients('<ul><h3>Ingredients:</h3><li>Green Apple</li><li>Lemon</li><li>Ginger</li><li>Cayenne Pepper</li><li>Zinc</li><li>Echinacea</li><li>Raw Agave</li></ul>'), setDesc('Makes you feel<br>so much better!'), setColor('yellowButton') "class="button-36 open yellowButton" id="open" role="button">
                         <h3>Prescription</h3>
                         <img src="img/Prescription.png" alt="">
                         <p>Apple, Lemon, Ginger, Cayenne, Echinacea, Agave</p>
@@ -116,6 +124,7 @@
                     <div class="overlay" onclick="closeModal()"></div>
                     <div class="modal" id="modal">
                         <img id="bottleImage" src="">
+                        <div id="juiceIngredients"></div>
                         <div id="info">
                             <h1 id="juiceHeader"></h1>
                             <p id="juiceDesc"></p>
