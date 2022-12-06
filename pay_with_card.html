@@ -5,9 +5,6 @@
         var cost = localStorage['cost'];
         var drink = localStorage['drink'];
         var desc = localStorage['description'];
-        localStorage.removeItem( 'cost' ); // Clear the localStorage
-        localStorage.removeItem('drink');
-        localStorage.removeItem('description');
     </script>
 	<head>
 		<meta charset="UTF-8">
@@ -31,15 +28,29 @@
                     <p style="margin-top: 75px;">
                         <FONT COLOR="000000">
                             <FONT size="6.5" face="arial">
-                                Total:<br><p id="total_cost"><span id="c"></span></p>
+                                <h1 id="total_cost">Total:<br> <span id="c"></span></h1>
                                 <script>
                                     // Gets total cost from previous page
                                     let c = cost
                                     document.getElementById("c").innerHTML = cost;
-                                </script><br>                                
+                                </script>                               
                             </FONT>
                         </FONT>
+                        <p id="juice_drink"><span id="j"></span></p>    
+                                <script>
+                                    // Gets the drink name from previous page
+                                    let j = drink
+                                    document.getElementById("j").innerHTML = drink
+                                </script>
+                        <p id="juice_desc"><span id="d"></span></p>
+                                <script>
+                                    // Gets the drink description from previous page
+                                    let d = desc
+                                    document.getElementById("d").innerHTML = desc
+                                </script>
+                        </p>
                     </p>
+                </p>
                 </div>
                 <p style="margin-top: 0px;text-align: center;">
                     <FONT color="000000" size="6.5" face="arial">
