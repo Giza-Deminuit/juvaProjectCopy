@@ -18,7 +18,7 @@
 	
 	<body>
         <div class="container">
-            <div class="main">
+            <div class="main2">
                 <div class="header">
                     <button onclick="window.location.href='index.html';" class="back">
                         <img class="backbutton" src="./img/BackButton.png">
@@ -26,14 +26,33 @@
                     <button onclick="window.location.href='index.html';"  class="home">
                         <img class="homebutton" src="./img/JUVA_Blueberry_Logo.png">
                     </button>
-                </script>
-        
-                <h1 id="total_cost">Total Cost: <span id="c"></span></h1>
-                                    <script>
-                                        // Gets total cost from previous page
-                                        let c = cost
-                                        document.getElementById("c").innerHTML = cost;
-                                    </script>
+                </div>
+                <div class="rectangle">
+                    <p style="margin-top: 75px;">
+                        <FONT COLOR="000000">
+                            <FONT size="6.5" face="arial">
+                                <h1 id="total_cost">Total:<br> <span id="c"></span></h1>
+                                <script>
+                                    // Gets total cost from previous page
+                                    let c = cost
+                                    document.getElementById("c").innerHTML = cost;
+                                </script>                               
+                            </FONT>
+                        </FONT>
+                    </p>
+                    <button onclick="window.location.href='pay_with_cash.html';" class="paybutton buttonpay">Cash</button>
+                    <button onclick="window.location.href='pay_with_card.html';" class="paybutton buttonpay">Debt/Credit</button>
+                    <button style="margin: 5px" onclick="window.location.href='pay_with_phone.html';" class="paybutton buttonpay">Apple/Google Pay</button>
+                    <p>
+                        <br>
+                    </p>
+                </div>
+                <div>
+                    <p style="margin-top: -70px;text-align: center;">
+                        <FONT color="000000" size="6.5" face="arial">
+                            Payment Options:                    
+                        </FONT>
+                    </p>
                 <p id="juice_drink"><span id="j"></span></p>    
                                     <script>
                                         // Gets the drink name from previous page
@@ -46,9 +65,6 @@
                                         let d = desc
                                         document.getElementById("d").innerHTML = desc
                                     </script>
-                </div>
-                <div>
-                    placeholder
                 </div>
                 
             </div>

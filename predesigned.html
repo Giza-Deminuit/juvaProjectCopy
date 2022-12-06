@@ -6,33 +6,49 @@
         var cost = 0.00
         var drink = ""
         var description = ""
+        var color = ""
 
         // Used to get cost of juice
-        function getCost(total) { 
+        function setCost(total) { 
             cost = total
-            localStorage.setItem("cost", cost);
+            localStorage.setItem("cost", cost.toFixed(2)); //makes prices formatted correctly
         }
 
         // Used to get the name of the juice
-        function getJuice(juice) {
+        function setJuice(juice) {
             drink = juice
             localStorage.setItem("drink", drink)
         }
 
         // Used to get the description of the juice
-        function getDesc(desc) {
+        function setDesc(desc) {
             description = desc
             localStorage.setItem("description", description)
+            
+        }
+
+        function setColor(colors) {
+            color = colors
+            localStorage.setItem("color", color)
+            getStuff()
         }
         
-        
+        function getStuff() {
+            document.getElementById("juiceHeader").innerHTML = localStorage.getItem("drink")
+            document.getElementById("juiceDesc").innerHTML = localStorage.getItem("description")
+            document.getElementById("juicePrice").innerHTML = "$" + localStorage.getItem("cost")
+            document.getElementById("bottleImage").src = "img/B" + localStorage.getItem("drink") + ".png"
+            document.getElementById("modal").className = "modal " + localStorage.getItem("color")
+        }
     </script>
+
 	<head>
 		<meta charset="UTF-8">
 		<title>JUVA Juice</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="drinks.css">
+        <link rel="stylesheet" href="detailMenuStyles.css">
 	</head>
 	
 	<body>
@@ -47,34 +63,60 @@
                     </button>
                 </div>
                 <div class="drink-holder">
-                    <button onclick="getCost(3.50), getJuice('John Lemon'), getDesc('Lemony fresh!'), window.location.href='payment_options.html' " class="button-36" role="button">
+                    <button onclick="setCost(3.50), setJuice('John Lemon'), setDesc('Lemony fresh!'), setColor('bluishButton') " class="button-36 open bluishButton" id="open" role="button">
                         <h3>John Lemon</h3>
                         <img src="img/JohnLemon.png" alt="">
+                        <p>Strawberries, Lemons, Apples</p>
                     </button>
-                    <button onclick="getCost(4.50), getJuice('Underground'), getDesc('All the minerals!'), window.location.href='payment_options.html' "class="button-36" role="button">
+                    <button onclick="setCost(4.50), setJuice('Underground'), setDesc('All the minerals!'), setColor('purpleButton') "class="button-36 open purpleButton" id="open" role="button">
                         <h3>Underground</h3>
                         <img src="img/Underground.png" alt="">
+                        <p>Beet, Carrot, Apple, Ginger, Lemon</p>
                     </button>
-                    <button onclick="getCost(3.52), getJuice('Red Zeppelin'), getDesc('You know he would love it'),  window.location.href='payment_options.html' "class="button-36" role="button">
+                    <button onclick="setCost(3.52), setJuice('Red Zeppelin'), setDesc('You know he would love it'), setColor('redButton') " class="button-36 open redButton" id="open" role="button">
                         <h3>Red Zeppelin</h3>
                         <img src="img/RedZeppelin.png" alt="">
+                        <p>Bell Pepper, Carrot, Orange, Lemon</p>
                     </button>
-                    <button onclick="getCost(6.50), getJuice('Citrus Psych'), getDesc('Get psyched for this!'), window.location.href='payment_options.html' "class="button-36" role="button">
+                    <button onclick="setCost(6.50), setJuice('Citrus Psych'), setDesc('Get psyched for this!'), setColor('orangeButton') "class="button-36 open orangeButton" id="open" role="button">
                         <h3>Citrus Psych</h3>
                         <img src="img/Citrus-Psych.png" alt="">
+                        <p> Orange, Carrots, Lemon, Apples, Kale</p>
                     </button>
-                    <button onclick="getCost(2.24), getJuice('Reboot'), getDesc('Get that energy back!'), window.location.href='payment_options.html' "class="button-36" role="button">
+                    <button onclick="setCost(2.24), setJuice('Reboot'), setDesc('Get that energy back!'), setColor('greenButton') "class="button-36 open greenButton" id="open" role="button">
                         <h3>Reboot</h3>
                         <img src="img/reboot.png" alt="">
+                        <p>Kale, Cucumber, Apple, Celery, Ginger, Lemon</p>
                     </button>
-                    <button onclick="getCost(4.51), getJuice('Prescription'), getDesc('Makes you feel so much better!'), window.location.href='payment_options.html' "class="button-36" role="button">
+                    <button onclick="setCost(4.51), setJuice('Prescription'), setDesc('Makes you feel so much better!'), setColor('yellowButton') "class="button-36 open yellowButton" id="open" role="button">
                         <h3>Prescription</h3>
                         <img src="img/Prescription.png" alt="">
+                        <p>Apple, Lemon, Ginger, Cayenne, Echinacea, Agave</p>
                     </button>
                 </div>
+                </div>
+
+                <div class="modal-container" id="modal_container">
+                    <div class="overlay" onclick="closeModal()"></div>
+                    <div class="modal" id="modal">
+                        <img id="bottleImage" src="">
+                        <div id="info">
+                            <h1 id="juiceHeader"></h1>
+                            <p id="juiceDesc"></p>
+                            <p id="juicePrice">$</p>
+
+                            <button id="close">
+                                <img src="img/checkmark.png" alt="">
+                                <img src="img/redx.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
                 
             </div>
         </div>
+
+        <script src="./script.js"></script>
 	</body>
 </html>
