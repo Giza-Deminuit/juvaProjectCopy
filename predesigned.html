@@ -24,7 +24,6 @@
         function setDesc(desc) {
             description = desc
             localStorage.setItem("description", description)
-            
         }
 
         function setColor(colors) {
@@ -39,6 +38,18 @@
             document.getElementById("juicePrice").innerHTML = "$" + localStorage.getItem("cost")
             document.getElementById("bottleImage").src = "img/B" + localStorage.getItem("drink") + ".png"
             document.getElementById("modal").className = "modal " + localStorage.getItem("color")
+        }
+
+        function pushLocalStorage() {
+            let juiceInfo = {}
+            juiceInfo.drink = drink
+            juiceInfo.desc = localStorage.getItem("description")
+            juiceInfo.cost = localStorage.getItem("cost")
+            juiceInfo.color = localStorage.getItem("color")
+
+            let juiceArray=localStorage.getItem('pushedJuice') || []
+            juiceArray.push(juiceInfo)
+            localStorage.setItem('juiceArray',juiceArray)
         }
     </script>
 
@@ -104,10 +115,12 @@
                             <h1 id="juiceHeader"></h1>
                             <p id="juiceDesc"></p>
                             <p id="juicePrice">$</p>
-
-                            <button id="close">
-                                <img src="img/checkmark.png" alt="">
-                                <img src="img/redx.png" alt="">
+                            <button id="confirm">
+                                <h2 onclick="pushLocalStorage()">
+                                    <a href="payment_options.html">
+                                        CONFIRM
+                                    </a>
+                                </h2>
                             </button>
                         </div>
                     </div>
