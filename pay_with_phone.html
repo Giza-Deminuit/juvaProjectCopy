@@ -29,10 +29,9 @@
                         <FONT COLOR="000000">
                             <FONT size="4" face="arial">
                                  <h1 id="total_cost">Total: <br><span id="c"></span></h1>
-                                <script>
+                                 <script>
                                     // Gets total cost from previous page
-                                    let c = cost
-                                    document.getElementById("c").innerHTML = cost;
+                                    document.getElementById("c").innerHTML = sessionStorage.getItem("cost");
                                 </script>                                                           
                             </FONT>
                         </FONT>
@@ -41,8 +40,7 @@
                                 <p id="juice_drink">You selected: <span id="j"></span></p>   
                                 <script>
                                     // Gets the drink name from previous page
-                                    let j = drink
-                                    document.getElementById("j").innerHTML = drink
+                                    document.getElementById("j").innerHTML = sessionStorage.getItem("drink");
                                 </script>                                                           
                             </FONT>
                         </FONT>    

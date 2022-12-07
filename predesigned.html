@@ -54,15 +54,21 @@
         }
 
         function pushLocalStorage() {
-            let juiceInfo = {}
-            juiceInfo.drink = drink
-            juiceInfo.desc = localStorage.getItem("description")
-            juiceInfo.cost = localStorage.getItem("cost")
-            juiceInfo.color = localStorage.getItem("color")
+            // Save info for payment screens
+            sessionStorage.setItem("cost", localStorage.getItem("cost"));
+            sessionStorage.setItem("drink", localStorage.getItem("drink"));
+            sessionStorage.setItem("back", "./predesigned.html"); // Makes payment options back buttun return to predesigned page
 
-            let juiceArray=localStorage.getItem('pushedJuice') || []
-            juiceArray.push(juiceInfo)
-            localStorage.setItem('juiceArray',juiceArray)
+            // Old push method:
+                /*let juiceInfo = {}
+                juiceInfo.drink = drink
+                juiceInfo.desc = localStorage.getItem("description")
+                juiceInfo.cost = localStorage.getItem("cost")
+                juiceInfo.color = localStorage.getItem("color")
+
+                let juiceArray=localStorage.getItem('pushedJuice') || []
+                juiceArray.push(juiceInfo)
+                localStorage.setItem('juiceArray',juiceArray)*/
         }
     </script>
 
