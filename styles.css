@@ -53,7 +53,6 @@ body {
     img.backbutton {
     height: 60px;
     width: 105px;
-
     opacity: 1;
     transition: 0.3s;
   }
@@ -65,6 +64,7 @@ body {
     width: 60px;
     flex-shrink: 3; /* default 1 */
     transition: 0.3s;
+    cursor: pointer;
   }
 
   img.homebutton:hover {opacity: 0.6}
@@ -149,13 +149,19 @@ hr.top {
   text-align: center;
   position: relative;
   top:-89px;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-width: 4px;
+  border-color: #000000c4;
 }
 
 .main2 {
   display: flex;
   flex-basis: 70vh;
   height: 97vh;
-  background-color: #D9D9D9; /* White background color */
+  background-color: white; /* White background color */
   border: 2px solid #2d2d2d; /* Black border */
   border-radius: 25px;
   flex-direction:column;
@@ -226,13 +232,3 @@ hr.top {
   position: relative; 
   bottom:35px; 
 } 
-.tysquare { 
-  border-radius: 15px; 
-  height: 350px; 
-  width: 400px; 
-  background-color: #FB973B; 
-  position: relative; 
-  top: 50px;
-  right: -8%; 
-  text-align: center; 
-}

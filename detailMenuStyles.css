@@ -80,6 +80,11 @@ ul {
     float: right;
 }
 
+#juicePrice {
+    font-size: 25px;
+    font-weight: 500px;
+}
+
 #close {
     background-color: transparent;
     border: none;
@@ -94,7 +99,7 @@ ul {
     border-radius:18px;
     border: none;
     width: 80%;
-    margin-top: 10%;
+    margin-top: 0%;
     display: inline-block;
 }
 
