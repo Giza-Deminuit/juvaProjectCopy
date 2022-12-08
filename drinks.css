@@ -42,11 +42,11 @@
 }
 
 .button-36 h3 {
-  background-color: #2a292965;
+  /*background-color: #2a292965;*/
   border-radius: 4rem;
   position: sticky;
   bottom: 210%;
-  margin-top: 0%;
+  margin-top: 10%; /* changed from 0 to 10% */
   width: 100%;
   align-self: center;
 }
@@ -121,6 +121,10 @@
   transition-duration: .1s;
 }
 
+.specRed {
+  background-image: linear-gradient(92.88deg, #E24545 9.16%, #e24747 43.89%, #e24b4b 64.72%);
+}
+
 .button-spec-orange {
   background-image: linear-gradient(92.88deg, #e2a345 9.16%, #e2a447 43.89%, #e2a64b 64.72%);
   border-radius: 8px;
@@ -147,6 +151,10 @@
 .button-spec-orange:hover {
   box-shadow: rgba(226, 163, 69, 0.5) 0 1px 30px;
   transition-duration: .1s;
+}
+
+.specOrange {
+  background-image: linear-gradient(92.88deg, #e2a345 9.16%, #e2a447 43.89%, #e2a64b 64.72%);
 }
 
 .button-spec-green {
@@ -177,6 +185,10 @@
   transition-duration: .1s;
 }
 
+.specGreen {
+  background-image: linear-gradient(92.88deg, #A8C13F 9.16%, #a6c040 43.89%, #a9c246 64.72%);
+}
+
 .button-spec-blue {
   background-image: linear-gradient(92.88deg, #8F6FD7 9.16%, #8f72d4 43.89%, #9479d4 64.72%);
   border-radius: 8px;
@@ -205,6 +217,10 @@
   transition-duration: .1s;
 }
 
+.specBlue {
+  background-image: linear-gradient(92.88deg, #8F6FD7 9.16%, #8f72d4 43.89%, #9479d4 64.72%);
+}
+
 .button-spec-pink {
   background-image: linear-gradient(92.88deg, #EA6AAA 9.16%, #eb6eac 43.89%, #eb76b1 64.72%);
   border-radius: 8px;
@@ -231,6 +247,10 @@
 .button-spec-pink:hover {
   box-shadow: rgba(234, 106, 170, 0.5) 0 1px 30px;
   transition-duration: .1s;
+}
+
+.specPink {
+  background-image: linear-gradient(92.88deg, #EA6AAA 9.16%, #eb6eac 43.89%, #eb76b1 64.72%);
 }
 
 h1{
