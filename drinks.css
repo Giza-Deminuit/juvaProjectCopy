@@ -122,7 +122,12 @@
 }
 
 .specRed {
-  background-image: linear-gradient(92.88deg, #E24545 9.16%, #e24747 43.89%, #e24b4b 64.72%);
+  background-image: linear-gradient(92.88deg, #e45858 9.16%, #e24747 43.89%, #d33a3a 64.72%);
+  border-width: 3px;
+  border-style: groove;
+  border-color: #e24747;
+  border-top: none;
+  border-left: none;
 }
 
 .button-spec-orange {
@@ -154,7 +159,12 @@
 }
 
 .specOrange {
-  background-image: linear-gradient(92.88deg, #e2a345 9.16%, #e2a447 43.89%, #e2a64b 64.72%);
+  background-image: linear-gradient(92.88deg, #dfac60 9.16%, #e2a447 43.89%, #df9c38 64.72%);
+  border-width: 3px;
+  border-style: groove;
+  border-color: #e2a447;
+  border-top: none;
+  border-left: none;
 }
 
 .button-spec-green {
@@ -186,7 +196,12 @@
 }
 
 .specGreen {
-  background-image: linear-gradient(92.88deg, #A8C13F 9.16%, #a6c040 43.89%, #a9c246 64.72%);
+  background-image: linear-gradient(92.88deg, #A8C13F 9.16%, #a6c040 43.89%, #a3bd3c 64.72%);
+  border-width: 3px;
+  border-style: groove;
+  border-color: #a6c040;
+  border-top: none;
+  border-left: none;
 }
 
 .button-spec-blue {
@@ -218,7 +233,12 @@
 }
 
 .specBlue {
-  background-image: linear-gradient(92.88deg, #8F6FD7 9.16%, #8f72d4 43.89%, #9479d4 64.72%);
+  background-image: linear-gradient(92.88deg, #997fd6 9.16%, #8f72d4 43.89%, #886acf 64.72%);
+  border-width: 3px;
+  border-style: groove;
+  border-color: #8f72d4;
+  border-top: none;
+  border-left: none;
 }
 
 .button-spec-pink {
@@ -250,7 +270,12 @@
 }
 
 .specPink {
-  background-image: linear-gradient(92.88deg, #EA6AAA 9.16%, #eb6eac 43.89%, #eb76b1 64.72%);
+  background-image: linear-gradient(92.88deg, #e67eb2 9.16%, #eb6eac 43.89%, #e767a7 64.72%);
+  border-width: 3px;
+  border-style: groove;
+  border-color: #eb6eac;
+  border-top: none;
+  border-left: none;
 }
 
 h1{

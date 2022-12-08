@@ -70,7 +70,7 @@
                     </button>
                 </div>
                 <div>
-                    <h1 style="color: #323087">Specialized beverages for a healthy body and mind</h1>
+                    <h1 style="color: #323087;margin: 0px;">Specialized beverages for a healthy body and mind</h1>
                 </div>
                 <div class="scroll-content">
                     <div class="drink-holder-2">
@@ -83,11 +83,13 @@
                         <button onclick="setCost(5.99), setJuice('Asthma'), setDesc('Breathe easily'), setColor('specPink')" class="button-spec-pink open specPink" id="open" role="button">
                             Asthma
                         </button>
-                        <button onclick="setCost(5.99), setJuice('Athletic Performance'), setDesc('Achieve your fitness goals'), setColor('specOrange')" class="button-spec-orange open specOrange" id="open" role="button" style="font-size:10px;font-weight:350">
-                            Athletic Performance
+                        <button onclick="setCost(5.99), setJuice('Athletic Performance'), setDesc('Achieve your fitness goals'), setColor('specOrange')" class="button-spec-orange open specOrange" id="open" role="button" style="position:relative;">
+                            <p style="color: rgba(0, 0, 0, 0);">.</p>
+                            <p style="position:absolute;top:-9px;right:6px;">Athletic<br>Performance</p>
                         </button>
-                        <button onclick="setCost(5.99), setJuice('Blood Pressure'), setDesc('Lower your blood pressure'), setColor('specBlue')" class="button-spec-blue open specBlue" id="open" role="button" style="font-size:12px">
-                            Blood Pressure
+                        <button onclick="setCost(5.99), setJuice('Blood Pressure'), setDesc('Lower your blood pressure'), setColor('specBlue')" class="button-spec-blue open specBlue" id="open" role="button" style="position:relative;">
+                            <p style="color: rgba(0, 0, 0, 0);">.</p>
+                            <p style="position:absolute;top:-9px;right:20px;">Blood<br>Pressure</p>
                         </button>
                         <button onclick="setCost(5.99), setJuice('Bronchitis'), setDesc('Keep from coughing'), setColor('specRed')" class="button-spec-red open specRed" id="open" role="button">
                             Bronchitis
