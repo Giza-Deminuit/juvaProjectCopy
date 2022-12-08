@@ -45,66 +45,7 @@
             sessionStorage.setItem("cost", localStorage.getItem("cost"));
             sessionStorage.setItem("drink", localStorage.getItem("drink"));
             sessionStorage.setItem("back", "./specialized.html"); // Makes payment options back buttun return to specialized page
-
-            // Old push method:
-                /*let juiceInfo = {}
-                juiceInfo.drink = drink
-                juiceInfo.desc = localStorage.getItem("description")
-                juiceInfo.cost = localStorage.getItem("cost")
-                juiceInfo.color = localStorage.getItem("color")
-
-                let juiceArray=localStorage.getItem('pushedJuice') || []
-                juiceArray.push(juiceInfo)
-                localStorage.setItem('juiceArray',juiceArray)*/
         }
-        /* OLD
-        //Initalize variables
-        var cost = 0.00
-        var drink = ""
-        var description = ""
-
-        // Used to get cost of juice
-        function getCost(total) { 
-            cost = total
-            localStorage.setItem("cost", cost);
-        }
-
-        // Used to get the name of the juice
-        function getJuice(juice) {
-            drink = juice
-            localStorage.setItem("drink", drink)
-        }
-
-        // Used to get the description of the juice
-        function getDesc(desc) {
-            description = desc
-            localStorage.setItem("description", description)
-            getStuff()
-        }
-
-        function getStuff() {
-            document.getElementById("juiceHeader").innerHTML = localStorage.getItem("drink")
-            document.getElementById("juiceDesc").innerHTML = localStorage.getItem("description")
-            document.getElementById("juicePrice").innerHTML = "$" + localStorage.getItem("cost")
-        }
-
-        function pushLocalStorage() {
-            // Save info for payment screens
-            sessionStorage.setItem("cost", localStorage.getItem("cost"));
-            sessionStorage.setItem("drink", localStorage.getItem("drink"));
-            sessionStorage.setItem("back", "./specialized.html"); // Makes payment options back buttun return to specialized page
-
-            // Old push method:
-            /*let juiceInfo = {}
-            juiceInfo.drink = drink
-            juiceInfo.desc = localStorage.getItem("description")
-            juiceInfo.cost = localStorage.getItem("cost")
-            juiceInfo.color = localStorage.getItem("color")
-
-            let juiceArray=localStorage.getItem('pushedJuice') || []
-            juiceArray.push(juiceInfo)
-            localStorage.setItem('juiceArray',juiceArray)
-        }*/
 
     </script>
 
@@ -210,7 +151,7 @@
 
                 <div class="modal-container" id="modal_container">
                     <div class="overlay" onclick="closeModal()"></div>
-                    <div class="modal">
+                    <div class="modal" id="modal">
                         <h1 id="juiceHeader"></h1>
                         <p id="juiceDesc"></p>
                         <p id="juicePrice">$</p>
