@@ -2,11 +2,17 @@
 
 <html lang="en">
     <script>
+        // Storing red button code
+        //<button id="red-x">
+        //    <img src="img/redx.png" alt=""/>
+        //                    </button>
+
         //Initalize variables
         var cost = 0.00
         var drink = ""
         var description = ""
         var color = ""
+        var ingredients = ""
 
         // Used to get cost of juice
         function setCost(total) { 
@@ -26,6 +32,12 @@
             localStorage.setItem("description", description)
         }
 
+        // Used to get the ingredients of the juice
+        function setIngredients(ingre) {
+            ingredients = ingre
+            localStorage.setItem("ingredients", ingredients)
+        }
+
         function setColor(colors) {
             color = colors
             localStorage.setItem("color", color)
@@ -36,20 +48,27 @@
             document.getElementById("juiceHeader").innerHTML = localStorage.getItem("drink")
             document.getElementById("juiceDesc").innerHTML = localStorage.getItem("description")
             document.getElementById("juicePrice").innerHTML = "$" + localStorage.getItem("cost")
+            document.getElementById("juiceIngredients").innerHTML = localStorage.getItem("ingredients")
             document.getElementById("bottleImage").src = "img/B" + localStorage.getItem("drink") + ".png"
             document.getElementById("modal").className = "modal " + localStorage.getItem("color")
         }
 
         function pushLocalStorage() {
-            let juiceInfo = {}
-            juiceInfo.drink = drink
-            juiceInfo.desc = localStorage.getItem("description")
-            juiceInfo.cost = localStorage.getItem("cost")
-            juiceInfo.color = localStorage.getItem("color")
+            // Save info for payment screens
+            sessionStorage.setItem("cost", localStorage.getItem("cost"));
+            sessionStorage.setItem("drink", localStorage.getItem("drink"));
+            sessionStorage.setItem("back", "./predesigned.html"); // Makes payment options back buttun return to predesigned page
 
-            let juiceArray=localStorage.getItem('pushedJuice') || []
-            juiceArray.push(juiceInfo)
-            localStorage.setItem('juiceArray',juiceArray)
+            // Old push method:
+                /*let juiceInfo = {}
+                juiceInfo.drink = drink
+                juiceInfo.desc = localStorage.getItem("description")
+                juiceInfo.cost = localStorage.getItem("cost")
+                juiceInfo.color = localStorage.getItem("color")
+
+                let juiceArray=localStorage.getItem('pushedJuice') || []
+                juiceArray.push(juiceInfo)
+                localStorage.setItem('juiceArray',juiceArray)*/
         }
     </script>
 
@@ -74,32 +93,32 @@
                     </button>
                 </div>
                 <div class="drink-holder">
-                    <button onclick="setCost(3.50), setJuice('John Lemon'), setDesc('Lemony fresh!'), setColor('bluishButton') " class="button-36 open bluishButton" id="open" role="button">
+                    <button onclick="setCost(3.50), setJuice('John Lemon'), setIngredients('<ul><h3>Per 16 fl oz:</h3><li>Calories: 200</li><li>Carbs: 50 g</li><li>Fat: 1 g</li><li>Protein: 1 g</li></ul>'), setDesc('Lemony fresh!'), setColor('bluishButton') " class="button-36 open bluishButton" id="open" role="button">
                         <h3>John Lemon</h3>
                         <img src="img/JohnLemon.png" alt="">
                         <p>Strawberries, Lemons, Apples</p>
                     </button>
-                    <button onclick="setCost(4.50), setJuice('Underground'), setDesc('All the minerals!'), setColor('purpleButton') "class="button-36 open purpleButton" id="open" role="button">
+                    <button onclick="setCost(4.50), setJuice('Underground'), setIngredients('<ul><h3>Per 16 fl oz:</h3><li>Calories: 200</li><li>Carbs: 43 g</li><li>Fat: 0 g</li><li>Protein: 3 g</li></ul>'), setDesc('All the minerals!'), setColor('purpleButton') "class="button-36 open purpleButton" id="open" role="button">
                         <h3>Underground</h3>
                         <img src="img/Underground.png" alt="">
                         <p>Beet, Carrot, Apple, Ginger, Lemon</p>
                     </button>
-                    <button onclick="setCost(3.52), setJuice('Red Zeppelin'), setDesc('You know he would love it'), setColor('redButton') " class="button-36 open redButton" id="open" role="button">
+                    <button onclick="setCost(3.52), setJuice('Red Zeppelin'), setIngredients('<ul><h3>Per 16 fl oz:</h3><li>Calories: 180</li><li>Carbs: 38 g</li><li>Fat: 0 g</li><li>Protein: 1 g</li></ul>'), setDesc('You know he would love it'), setColor('redButton') " class="button-36 open redButton" id="open" role="button">
                         <h3>Red Zeppelin</h3>
                         <img src="img/RedZeppelin.png" alt="">
                         <p>Bell Pepper, Carrot, Orange, Lemon</p>
                     </button>
-                    <button onclick="setCost(6.50), setJuice('Citrus Psych'), setDesc('Get psyched for this!'), setColor('orangeButton') "class="button-36 open orangeButton" id="open" role="button">
+                    <button onclick="setCost(6.50), setJuice('Citrus Psych'), setIngredients('<ul><h3>Per 16 fl oz:</h3><li>Calories: 200</li><li>Carbs: 45 g</li><li>Fat: 0 g</li><li>Protein: 3 g</li></ul>'), setDesc('Get psyched for this!'), setColor('orangeButton') "class="button-36 open orangeButton" id="open" role="button">
                         <h3>Citrus Psych</h3>
                         <img src="img/Citrus-Psych.png" alt="">
                         <p> Orange, Carrots, Lemon, Apples, Kale</p>
                     </button>
-                    <button onclick="setCost(2.24), setJuice('Reboot'), setDesc('Get that energy back!'), setColor('greenButton') "class="button-36 open greenButton" id="open" role="button">
+                    <button onclick="setCost(2.24), setJuice('Reboot'), setIngredients('<ul><h3>Per 16 fl oz:</h3><li>Calories: 160</li><li>Carbs: 33 g</li><li>Fat: 0 g</li><li>Protein: 1 g</li></ul>'), setDesc('Get that energy back!'), setColor('greenButton') "class="button-36 open greenButton" id="open" role="button">
                         <h3>Reboot</h3>
                         <img src="img/reboot.png" alt="">
                         <p>Kale, Cucumber, Apple, Celery, Ginger, Lemon</p>
                     </button>
-                    <button onclick="setCost(4.51), setJuice('Prescription'), setDesc('Makes you feel so much better!'), setColor('yellowButton') "class="button-36 open yellowButton" id="open" role="button">
+                    <button onclick="setCost(4.51), setJuice('Prescription'), setIngredients('<ul><h3>Per 16 fl oz:</h3><li>Calories: 175</li><li>Carbs: 38 g</li><li>Fat: 1 g</li><li>Protein: 2 g</li></ul>'), setDesc('Makes you feel<br>so much better!'), setColor('yellowButton') "class="button-36 open yellowButton" id="open" role="button">
                         <h3>Prescription</h3>
                         <img src="img/Prescription.png" alt="">
                         <p>Apple, Lemon, Ginger, Cayenne, Echinacea, Agave</p>
@@ -111,6 +130,7 @@
                     <div class="overlay" onclick="closeModal()"></div>
                     <div class="modal" id="modal">
                         <img id="bottleImage" src="">
+                        <div id="juiceIngredients"></div>
                         <div id="info">
                             <h1 id="juiceHeader"></h1>
                             <p id="juiceDesc"></p>
@@ -121,9 +141,6 @@
                                         CONFIRM
                                     </a>
                                 </h2>
-                            </button>
-                            <button id="red-x">
-                                <img src="img/redx.png" alt=""/>
                             </button>
                         </div>
                     </div>

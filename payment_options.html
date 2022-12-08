@@ -5,9 +5,9 @@
         var cost = localStorage['cost'];
         var drink = localStorage['drink'];
         var desc = localStorage['description'];
-        localStorage.removeItem( 'cost' ); // Clear the localStorage
-        localStorage.removeItem('drink');
-        localStorage.removeItem('description');
+        //localStorage.removeItem( 'cost' ); // Clear the localStorage
+       // localStorage.removeItem('drink');
+        //localStorage.removeItem('description');
     </script>
 	<head>
 		<meta charset="UTF-8">
@@ -20,7 +20,7 @@
         <div class="container">
             <div class="main2">
                 <div class="header">
-                    <button onclick="window.location.href='index.html';" class="back">
+                    <button onclick="window.location.href=sessionStorage.getItem('back');" class="back">
                         <img class="backbutton" src="./img/BackButton.png">
                     </button>
                     <button onclick="window.location.href='index.html';"  class="home">
@@ -28,43 +28,36 @@
                     </button>
                 </div>
                 <div class="rectangle">
-                    <p style="margin-top: 75px;">
+                    <strong style="position: relative; top:50px">
                         <FONT COLOR="000000">
-                            <FONT size="6.5" face="arial">
-                                <h1 id="total_cost">Total:<br> <span id="c"></span></h1>
+                            <FONT size="4" face="arial">
+                                 <h1 id="total_cost">Total: <br><span id="c"></span></h1>
                                 <script>
                                     // Gets total cost from previous page
-                                    let c = cost
-                                    document.getElementById("c").innerHTML = cost;
-                                </script>                               
+                                    document.getElementById("c").innerHTML = sessionStorage.getItem("cost");
+                                </script>                                                           
                             </FONT>
                         </FONT>
-                    </p>
+                        <FONT COLOR="000000">
+                            <FONT size="6.5" face="arial">
+                                <p id="juice_drink">You selected: <span id="j"></span></p>   
+                                <script>
+                                    // Gets the drink name from previous page
+                                    document.getElementById("j").innerHTML = sessionStorage.getItem("drink");
+                                </script>                                                           
+                            </FONT>
+                        </FONT>    
+                    </strong>
                     <button onclick="window.location.href='pay_with_cash.html';" class="paybutton buttonpay">Cash</button>
-                    <button onclick="window.location.href='pay_with_card.html';" class="paybutton buttonpay">Debt/Credit</button>
+                    <button onclick="window.location.href='pay_with_card.html';" class="paybutton buttonpay">Debit/Credit</button>
                     <button style="margin: 5px" onclick="window.location.href='pay_with_phone.html';" class="paybutton buttonpay">Apple/Google Pay</button>
-                    <p>
-                        <br>
-                    </p>
                 </div>
                 <div>
-                    <p style="margin-top: -70px;text-align: center;">
+                    <p style="margin-top: -35px;text-align: center;">
                         <FONT color="000000" size="6.5" face="arial">
                             Payment Options:                    
                         </FONT>
                     </p>
-                <p id="juice_drink"><span id="j"></span></p>    
-                                    <script>
-                                        // Gets the drink name from previous page
-                                        let j = drink
-                                        document.getElementById("j").innerHTML = drink
-                                    </script>
-                <p id="juice_desc"><span id="d"></span></p>
-                                    <script>
-                                        // Gets the drink description from previous page
-                                        let d = desc
-                                        document.getElementById("d").innerHTML = desc
-                                    </script>
                 </div>
                 
             </div>

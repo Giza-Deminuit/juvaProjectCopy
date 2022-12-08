@@ -102,7 +102,7 @@
   cursor: pointer;
   flex-shrink: 0;
   font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 500;
   height: 4rem;
   width: 6.5rem;
@@ -119,6 +119,10 @@
 .button-spec-red:hover {
   box-shadow: rgba(226, 69, 69, 0.5) 0 1px 30px;
   transition-duration: .1s;
+}
+
+.specRed {
+  background-image: linear-gradient(92.88deg, #E24545 9.16%, #e24747 43.89%, #e24b4b 64.72%);
 }
 
 .button-spec-orange {
@@ -149,6 +153,10 @@
   transition-duration: .1s;
 }
 
+.specOrange {
+  background-image: linear-gradient(92.88deg, #e2a345 9.16%, #e2a447 43.89%, #e2a64b 64.72%);
+}
+
 .button-spec-green {
   background-image: linear-gradient(92.88deg, #A8C13F 9.16%, #a6c040 43.89%, #a9c246 64.72%);
   border-radius: 8px;
@@ -175,6 +183,10 @@
 .button-spec-green:hover {
   box-shadow: rgba(168, 193, 63, 0.5) 0 1px 30px;
   transition-duration: .1s;
+}
+
+.specGreen {
+  background-image: linear-gradient(92.88deg, #A8C13F 9.16%, #a6c040 43.89%, #a9c246 64.72%);
 }
 
 .button-spec-blue {
@@ -205,6 +217,10 @@
   transition-duration: .1s;
 }
 
+.specBlue {
+  background-image: linear-gradient(92.88deg, #8F6FD7 9.16%, #8f72d4 43.89%, #9479d4 64.72%);
+}
+
 .button-spec-pink {
   background-image: linear-gradient(92.88deg, #EA6AAA 9.16%, #eb6eac 43.89%, #eb76b1 64.72%);
   border-radius: 8px;
@@ -231,4 +247,13 @@
 .button-spec-pink:hover {
   box-shadow: rgba(234, 106, 170, 0.5) 0 1px 30px;
   transition-duration: .1s;
+}
+
+.specPink {
+  background-image: linear-gradient(92.88deg, #EA6AAA 9.16%, #eb6eac 43.89%, #eb76b1 64.72%);
+}
+
+h1{
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  text-align: center;
 }

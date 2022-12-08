@@ -215,14 +215,24 @@ hr.top {
   color: white;
 }
 
-/* Thank You Screen Styles */
-.bottomrectangle {
-  border-radius: 25px;
-  height: 100px;
-  width: 477px;
-  background-color: #FB973B;
-  opacity: 0.8;
-  text-align: center;
-  position: relative;
-  bottom:-492px;
+/* Thank You Screen Styles */ 
+.bottomrectangle { 
+  border-radius: 25px; 
+  height: 100px; 
+  width: 477px; 
+  background-color: #FB973B; 
+  opacity: 1; 
+  text-align: center; 
+  position: relative; 
+  bottom:35px; 
+} 
+.tysquare { 
+  border-radius: 15px; 
+  height: 350px; 
+  width: 400px; 
+  background-color: #FB973B; 
+  position: relative; 
+  top: 50px;
+  right: -8%; 
+  text-align: center; 
 }

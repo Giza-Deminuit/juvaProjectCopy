@@ -5,9 +5,6 @@
         var cost = localStorage['cost'];
         var drink = localStorage['drink'];
         var desc = localStorage['description'];
-        localStorage.removeItem( 'cost' ); // Clear the localStorage
-        localStorage.removeItem('drink');
-        localStorage.removeItem('description');
     </script>
 	<head>
 		<meta charset="UTF-8">
@@ -28,24 +25,39 @@
                     </button>
                 </div>
                 <div class="rectangle">
-                    <p style="margin-top: 75px;">
+                    <strong style="position: relative; top:50px">
                         <FONT COLOR="000000">
-                            <FONT size="6.5" face="arial">
-                                Total:<br><p id="total_cost"><span id="c"></span></p>
-                                <script>
+                            <FONT size="4" face="arial">
+                                 <h1 id="total_cost">Total: <br><span id="c"></span></h1>
+                                 <script>
                                     // Gets total cost from previous page
-                                    let c = cost
-                                    document.getElementById("c").innerHTML = cost;
-                                </script><br>                                
+                                    document.getElementById("c").innerHTML = sessionStorage.getItem("cost");
+                                </script>                                                         
                             </FONT>
                         </FONT>
-                    </p>
+                        <FONT COLOR="000000">
+                            <FONT size="6.5" face="arial">
+                                <p id="juice_drink">You selected: <span id="j"></span></p>   
+                                <script>
+                                    // Gets the drink name from previous page
+                                    document.getElementById("j").innerHTML = sessionStorage.getItem("drink");
+                                </script>                                                             
+                            </FONT>
+                        </FONT>    
+                    </strong>
                 </div>
                 <p style="margin-top: 0px;text-align: center;">
                     <FONT color="000000" size="6.5" face="arial">
                         Please swipe, tap, or<br>insert your card below                       
                     </FONT>
                 </p>
+                <button id="confirm">
+                    <h2>
+                        <a href="thank_you_screen.html">
+                            Click to Continue
+                        </a>
+                    </h2>
+                </button>
             </div>
         </div>
 	</body>
