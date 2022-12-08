@@ -42,11 +42,11 @@
 }
 
 .button-36 h3 {
-  background-color: #2a292965;
+  /*background-color: #2a292965;*/
   border-radius: 4rem;
   position: sticky;
   bottom: 210%;
-  margin-top: 0%;
+  margin-top: 10%; /* changed from 0 to 10% */
   width: 100%;
   align-self: center;
 }
